@@ -2,7 +2,8 @@ cask "clypra" do
   version "1.0.1"
   sha256 "d738f57300a146709c8b324bbe1f694e8f53cfbdae98c06459889368a189d729"
 
-  url "https://github.com/AIEraDev/Clypra/releases/download/v#{version}/Clypra_#{version}_aarch64.dmg"
+  url "https://github.com/AIEraDev/Clypra/releases/download/v#{version}/Clypra_#{version}_aarch64.dmg",
+      verified: "github.com/AIEraDev/Clypra/"
   name "Clypra"
   desc "A modern, high-performance desktop video editor built with Tauri and Rust"
   homepage "https://clypra.abdulkabirmusa.com/"
