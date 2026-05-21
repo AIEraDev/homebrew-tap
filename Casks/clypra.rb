@@ -10,6 +10,12 @@ cask "clypra" do
 
   app "Clypra.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-r", "-d", "com.apple.quarantine", "#{staged_path}/Clypra.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.clypra.app",
     "~/Library/Caches/com.clypra.app",
