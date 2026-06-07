@@ -8,6 +8,8 @@ cask "clypra" do
   desc "A modern, high-performance desktop video editor built with Tauri and Rust"
   homepage "https://clypra.abdulkabirmusa.com/"
 
+  depends_on formula: "ffmpeg"
+
   app "Clypra.app"
 
   postflight do
