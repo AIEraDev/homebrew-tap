@@ -34,12 +34,12 @@ jobs:
           BASE_URL="https://github.com/AIEraDev/Ithqan/releases/download/${TAG}"
 
           echo "Downloading aarch64 DMG..."
-          curl -fSL -o "ithqan_aarch64.dmg" "${BASE_URL}/Ithqan_${TAG}_aarch64.dmg"
+          curl -fSL -o "ithqan_aarch64.dmg" "${BASE_URL}/Ithqan_${TAG}_macos_aarch64.dmg"
           SHA_ARM=$(shasum -a 256 ithqan_aarch64.dmg | awk '{print $1}')
           echo "ARM64 SHA256: $SHA_ARM"
 
           echo "Downloading x64 DMG..."
-          curl -fSL -o "ithqan_x64.dmg" "${BASE_URL}/Ithqan_${TAG}_x64.dmg"
+          curl -fSL -o "ithqan_x64.dmg" "${BASE_URL}/Ithqan_${TAG}_macos_x64.dmg"
           SHA_X64=$(shasum -a 256 ithqan_x64.dmg | awk '{print $1}')
           echo "X64 SHA256: $SHA_X64"
 
@@ -61,7 +61,7 @@ jobs:
             sha256 arm:   "ARM_SHA_PLACEHOLDER",
                    intel: "X64_SHA_PLACEHOLDER"
 
-            url "https://github.com/AIEraDev/Ithqan/releases/download/v#{version}/Ithqan_v#{version}_#{arch}.dmg",
+            url "https://github.com/AIEraDev/Ithqan/releases/download/v#{version}/Ithqan_v#{version}_macos_#{arch}.dmg",
                 verified: "github.com/AIEraDev/Ithqan/"
 
             name "Ithqan"
