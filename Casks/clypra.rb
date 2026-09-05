@@ -4,9 +4,7 @@ cask "clypra" do
   version "1.4.7"
   sha256 arm: "4339d4fa906b3441181f4da74244df2c6f1522fd996bb66f99d46a5a1be4f850"
 
-  url "https://github.com/AIEraDev/Clypra/releases/download/v#{version}/Clypra_#{version}_#{arch}.dmg",
-      verified: "github.com/AIEraDev/Clypra/"
-
+  url "https://github.com/AIEraDev/Clypra/releases/download/v#{version}/Clypra_#{version}_#{arch}.dmg"
   name "Clypra"
   desc "A modern, native video editor built with Tauri, React, and FFmpeg"
   homepage "https://github.com/AIEraDev/Clypra"
