@@ -1,8 +1,8 @@
 cask "clypra" do
   arch arm: "aarch64"
 
-  version "1.4.7"
-  sha256 arm: "cd7a9ba047a3ba3f7a042006cb8901ce29a0ffcb3e2710c0880ca62aa280c4a8"
+  version "1.5.3"
+  sha256 arm: "7015a57f20cc4cf426f544eb7e67584f72c62bba8ec19df5294f5829c5b1621d"
 
   url "https://github.com/AIEraDev/Clypra/releases/download/v#{version}/Clypra_#{version}_#{arch}.dmg"
   name "Clypra"
